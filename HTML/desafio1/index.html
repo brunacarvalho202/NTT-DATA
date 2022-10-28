@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>Desafio 1 de HTML</title>
+        <h1> 
+            <mark>Breve resumo sobre HTML</mark>
+        </h1>
+
+        <p>
+            Desafio proposto com o objetivo de explicar cada tópico de html abordado no bootcamp da NTT DATA de forma prática: fazendo um código autoexplicativo                    
+        </p>
+
+        <hr/>
+    </head>
+    <body>
+        <ul>
+            <h2>Índice:</h2>
+            <li> <a href="#aula1"> Introdução ao HTML </a> </li>
+            <li> <a href="#aula2"> Estrutura básica de HTML </a> </li>
+            <li> <a href="#aula3"> Tags em HTML </a> </li>
+            <li> <a href="#aula4"> Atributos para tags em HTML </a> </li>
+            <li> <a href="#aula5"> Lidando com textos em HTML </a> </li>
+            <li> <a href="#aula6"> Listas ordenadas e não ordenadas em HTML </a> </li>     
+            <li> <a href="#aula6"> Links em HTML </a> </li>       
+        </ul>
+
+        <hr>
+
+        <h3 id="aula1"> <Mark> Introdução</Mark> ao HTML</h3>
+        <p>
+            HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas 
+            para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si, seja dentro de um único site ou entre sites. 
+            Links são um aspecto fundamental da web. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.
+        </p>
+
+        <hr/>
+        <h3 id="aula2"> <mark>Estrutura básica</mark> de HTML</h3>
+        <p>
+            Por padrão do W3C os arquivos de páginas HTML ficam no arquivo de projeto princiapl chamado "index.html" que têm esse nome por 
+            padrão e boas práticas, mas pode ser modificado. <strong>O HTML é estruturadas em 3 tags principais: <i>html, head e body.</i> </strong> 
+
+            <ol>
+                <li>
+                    <u>A tag de html</u> A tag de html faz com que o navegador entenda que tudo dentro do arquivo que ee está interpretando é html.
+                </li>
+
+                <li>
+                    <u>A tah head</u> recebe informações gerais do documento, mais conhecidos como metadados, como por ex o titulo que fica na 
+                    aba do navegador atraves da tag title.
+                </li>
+
+                <li>
+                    <u>A tag body</u> 
+                </li>
+            </ol>
+
+            <p>
+                <blockquote>
+                    <strong>
+                        Obs: O World Wide Web Consortium (W3C) é a principal organização de padronização da World Wide Web. Consiste em um consórcio 
+                        internacional com 450 membros, agrega empresas, órgãos governamentais e organizações independentes com a finalidade de 
+                        estabelecer padrões para a criação e a interpretação de conteúdos para a Web.
+                    </strong>
+                </blockquote>
+            </p>
+        </p>
+
+        <hr/>
+        <h3 id="aula3"> <mark>Tags</mark> em HTML</h3>
+            <p>
+                As tags são elementos que têm uma importância significativa na estrutura do seu site, visto que é ela quem informa ao navegador que 
+                tipo de estrutura vai ser usada para a informação que vc quer construir no site (ela estrutura sua informação no documento), podendo
+                indicar, por ex, que é um titulo, paragrafo, imagem, link e outros recursos de estrutura html. Existem duas formas especificas para
+                essa tag ser digitada no código: usando seu nome dentro de sinal maior e menor (< NomeDaTag >). Além disso, toda tag precisa ser 
+                aberta/inicializada e fechada com uma barra dentro do simbolo (< NomeDaTag />). Algumas tags específicas se autofecham, pq possuem 
+                apenas uma sinalização de inicialização já que não precisam receber informação dentro delas. Dois exemplos delas são < img /> < input/>
+                <i>
+                    <strong> Obs: outras tags podem ser usadas dentro de uma.</strong>
+                </i>
+            </p>
+
+            <p> 
+                <blockquote>
+                    <small>
+                        <strong>
+                            Um <i>exemplo</i> de tag em HTML é a <i><strong> <mark>< small > < / small > </mark></strong></i> que deixa o texto,
+                            exatamente assim, com a fonte menor que a padrão.
+
+                            <p>
+                                Outros <i>exemplos</i> interessantes de tag HTML é <i><strong> <mark>< sup > < / sup > </mark></strong></i> que deixa o texto
+                                no índice de outro como: X<sup>2</sup> e <i><strong> <mark>< sub > < / sub > </mark></strong></i> que faz com que esse íncide
+                                fique abaixo do texto como: X<sub>2</sub>
+                            </p>
+
+                        </strong>
+                    </small>
+                </blockquote>
+            </p>
+
+            <hr/>
+        <h3 id="aula4"> <Mark>Atributos</Mark> para tags em HTML</h3>
+        <p>
+           Os atributos são basicamente recursos que configuram as tags. Existem as tagas mais genéricas, que todas as tagas
+           possuem e, também, têm os que são espcíficos para cada tag. A aplicação desse atributo dentro do código é 
+           colocando sua estrutura dentro do nome da tag. 
+           <i>Ex: < input <u>type= "text"</u> /> </i>
+        </p>
+
+        <p>
+            <strong>Os 3 atributos mais genéricos são: </strong>
+            <ul>
+                <li>
+                    <strong>atributo "id"</strong>
+                    <p>
+                        serve como um identificador para aquele elemento
+                    </p>
+                </li>
+                <li>
+                    <strong>atributo "style"</strong>
+                    <p>
+                        é um atributo mais voltado para o css,que é uma forma de formatar o html,
+                        serve para colocar os comandos css direto no elemento.
+                    </p>
+
+                </li>
+                <li>
+                    <strong>atributo "class"</strong>
+                    <p>
+                        É um outro atributo voltado para o css, no qual vc moonta uma classe e adiciona todas as caracteristicas
+                        de formtação que vc deseja. Tudo que estiver nessa classe, quando vc direciona o elemnto para ela, vai 
+                        ser padronizado como estar lá.
+                    </p>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <strong>Exemplos de atributos específicos:</strong>
+            <ul>
+                <li>
+                    <strong>atributo "type" para tag "input"</strong>
+                    O type pode receber alguns tipos de informações, como texto, numeros e até cores.
+                    <ul>
+                        <li>
+                            <strong>type de texto:</strong> cria um campo no input para receber apenas texto
+                            <p>
+                                estrutura: < type = "number" />
+                            </p>
+                        </li>
+                        <li>
+                            <strong>type de numeros: </strong> cria um campo de input para receber números, inclusive com umas setas para aumentar ou diminiui esse número.
+                            <p>
+                                estrutura: < type = "text" />
+                            </p>
+                        </li>
+                        <li>
+                            <strong>type de cores: </strong> cria um campo de input com a opção de seletor de cores para estar nesse campo do input.
+                            <p>
+                                estrutura: < type = "color" />
+                            </p>
+                        </li>
+                    </ul>         
+                </li>
+
+                <li>
+                    <strong>atributo "src" e "alt" da tag img</strong> a tag img recebe imagens para precisa do atributo "src" para direcionar onde está essa imagem e qual é, podendo ser um link de internet ou o caminho do arquivo e pasta onde se encontra essa imagem. Resumidamente, o src recebe o endereço dessa imagem. Já o atributo alt recebe a descrição dessa imagem inserida.
+
+                    <p>
+                        estrutura: < img src="<i>endereço de imagem</i> " alt=" <i>descrição dessa imagem</i> ">
+                    </p>
+                </li>
+
+                <p>
+                    <blockquote>
+                        <p><strong>observação: caso a img fique grande, outro atributo disponivel é o widht que formata a largura.</strong></p>
+                        <p>estrutura: < img src="endereço" alt="descrição" width="numero da largura">    </p>
+                    </blockquote>
+                </p>
+
+            </ul>
+        </p>
+
+
+        <hr/>
+        <h3 id="aula5">Lidando com <Mark>textos</Mark> em HTML</h3>
+        <p>
+            Algumas tags nos fornecem a capacidade de manipular e estruturar os textos em html. Veremos algumas:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Tag "h"</strong> são as tags para títulos. Possui subdivisões de h1 até h6, onde cada tag consecutiva se comporta como o subtitulo da anterior.
+                Vale lembrar que o navegador entende que, por ex, h2 é subtitulo de h1 e por padrão da um espaçamento entre eles, podendo, também, ser alterado via css
+                <h1>titulo 1</h1>
+                <h2>titulo 2</h2>
+                <h3>titulo 3</h3>
+                <h4>titulo 4</h4>
+                <h5>titulo 5</h5>
+                <h6>titulo 6</h6>
+            </li>
+
+            <li>
+                <strong>Tag "blockquote"</strong> serve para padronizar uma citação despredendo esse texto do resto e adicionando um espaçamento e margem.
+                <blockquote>citação</blockquote>
+            </li>
+
+            <li>
+                <strong>Tag "u"</strong> de underline, <u>sublinha um texto</u>.
+            </li>
+
+            <li>
+                <strong>Tag "i"</strong> deixa o texto em <i>itálico</i>.
+            </li>
+
+            <li>
+                <strong>Tag "mark"</strong> <mark>marca o texto</mark> com a cor padrão amarela, mas pode ser mudada com css
+            </li> 
+
+        </ul>
+
+        <hr/>
+        <h3 id="aula6"> <mark>Listas</mark> ordenadas e não ordenadas em HTML</h1>
+        <p>
+            O HTML possui duas formas de listas textos, ordenadamente (tag ol) ou desordenadamente (tag ul). Cada forma com sua tag específica: 
+        </p>
+        
+        <p>
+            <strong>Estruturas: </strong>
+
+            <ul>
+                <li>lista ordenada: < ol> adicionar as tags li para cada item < /ol> </li>
+                <li>lista não ordenada: < ul> adicionar as tags li para cada item < /ul> </li>
+            </ul>
+        </p>
+
+        <p><strong>A lista ordenada organiza seus itens(tag li) por numerações e por isso necessita das suas tags filhas (para cada item)</strong></p>
+
+        <ol>lista ordenada:
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+
+        <p><strong>A lista não ordenada não enumera seus itens, apenas os separa com espaçamentos e marcadores de bolinhas (podem ser mudados com css)</strong></p>
+
+        <ul>lista não ordenada:
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <hr/>
+        <h3 id="aula6"> <mark>Links</mark> em HTML</h1>
+        <p>  
+           adicionar explicação de links
+        </p>
+        <p>
+            3 formas de adc links
+        </p>
+
+    </body>
+</html>
